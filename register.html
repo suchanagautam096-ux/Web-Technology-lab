@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="nav_bar">
+        <a href="home.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="home2.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <div id="reg_form">
+        
+
+        <form action="register.php" method="post">
+
+            <div class="form_group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname"
+                       name="firstname" placeholder="Enter first name"
+                       required>
+            </div>
+
+            <div class="form_group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname"
+                       name="lastname" placeholder="Enter last name"
+                       required>
+            </div>
+
+            <div class="form_group">
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                       name="password" placeholder="Enter password"
+                       required>
+            </div>
+
+            <div class="form_group">
+                <label>Gender</label>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="gender" value="M" required>
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="F">
+                        Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="form_group">
+                <label>Interests</label>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="interest[]" value="riding">
+                        Riding
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest[]" value="running">
+                        Running
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interest[]" value="walking">
+                        Walking
+                    </label>
+                </div>
+            </div>
+
+            <div class="form_group">
+                <label for="email">Email</label>
+                <input type="email" id="email"
+                       name="email" placeholder="Enter email address"
+                       required>
+            </div>
+
+            <input type="submit" value="Register" id="register_button">
+
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 | My Website</p>
+    </footer>
+
+</body>
+</html>
